@@ -2,7 +2,8 @@
 <resources>
     <string name="app_name">MyApp</string>
     <string name="login_layout_main_text">ავტორიზაცია</string>
-
+    <string name="login_text">შესვლა</string>
+    <string name="register_text">რეგისტრაცია</string>
 
 
 </resources>

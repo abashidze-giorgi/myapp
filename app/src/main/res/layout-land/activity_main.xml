@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:background="@color/background_black"
@@ -9,24 +10,27 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         style="@style/back_button_icon"
-    />
+        />
 
     <androidx.appcompat.widget.AppCompatImageView
-        style="@style/main_pic" />
+        style="@style/main_pic"
+        android:layout_height="150dp"/>
+
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:fontFamily="@font/gloria_hallelujah"
+        app:fontFamily="@font/gloria_hallelujah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/login_layout_main_text"
         android:textColor="@color/button_blue"
-        android:textSize="@dimen/head_font_size"
-         />
+        android:textSize="34sp"
+        />
 
     <androidx.appcompat.widget.AppCompatButton
         android:text="@string/login_text"
-        style="@style/main_button" />
+        style="@style/main_button"
+        android:layout_marginTop="5dp"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:text="@string/register_text"
