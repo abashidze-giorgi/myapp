@@ -18,7 +18,7 @@
 
 
     <androidx.appcompat.widget.AppCompatTextView
-        app:fontFamily="@font/gloria_hallelujah"
+        app:fontFamily="@font/main_font"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -28,13 +28,13 @@
         />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:text="@string/login_text"
+        android:text="@string/user_name"
         style="@style/Main_Button"
         android:layout_marginTop="5dp"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:text="@string/register_text"
-        style="@style/Main_Button" />
+        style="@style/Main_Button"/>
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>
