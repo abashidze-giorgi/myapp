@@ -3,14 +3,6 @@
 
     <item android:state_pressed="true" android:drawable="@drawable/button_gradient_blue_pressed"/>
 
-    <item>
-        <shape android:shape="rectangle">
-            <gradient android:startColor="@color/button_blue"
-                android:endColor="@color/button_pressed_blue"
-                android:angle="0"/>
-            <stroke android:width="2dp" android:color="@color/white"/>
-            <corners android:radius="8dp"/>
-        </shape>
-    </item>
+    <item android:drawable="@drawable/button_gradient_solid_blue"/>
 
 </selector>

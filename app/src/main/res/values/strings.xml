@@ -3,6 +3,7 @@
     <string name="login_layout_main_text">AUTHORIZATION</string>
     <string name="login_text">LOGIN</string>
     <string name="register_text">REGISTER</string>
+    <string name="password">PASSWORD</string>
     <!--    <string name="app_name">MyApp</string>-->
 <!--    <string name="app_name">MyApp</string>-->
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="main_button" parent="Widget.AppCompat.Button">
+    <style name="Main_Button" parent="Widget.AppCompat.Button">
         <item name="android:fontFamily">@font/gloria_hallelujah</item>
         <item name="android:textSize">@dimen/button_authorization_font_size</item>
         <item name="android:layout_width">@dimen/button_authorization_width</item>
@@ -13,14 +13,14 @@
         <item name="android:background">@drawable/button_background</item>
     </style>
 <!--    app:srcCompat="@drawable/got"-->
-    <style name="main_pic">
+    <style name="Main_Image">
         <item name="srcCompat">@drawable/got</item>
         <item name="android:layout_marginTop">-52dp</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">@dimen/main_pic_height</item>
     </style>
 
-    <style name="back_button_icon" parent="Widget.AppCompat.Button">
+    <style name="Back_Button_Icon" parent="Widget.AppCompat.Button">
         <item name="android:src">@drawable/ic_round_arrow_back_ios_32px</item>
         <item name="android:paddingTop">1dp</item>
         <item name="android:paddingBottom">1dp</item>
@@ -28,4 +28,36 @@
         <item name="android:layout_width">@dimen/icon_button_size</item>
         <item name="android:layout_height">@dimen/icon_button_size</item>
     </style>
+
+    <style name="Text_Title" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:fontFamily">@font/gloria_hallelujah</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/button_blue</item>
+        <item name="android:textSize">@dimen/head_font_size</item>
+    </style>
+
+    <style name="Text_Title.Button_Label_Text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:width">80dp</item>
+    </style>
+
+    <style name="Edit_Text" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/button_blue</item>
+        <item name="fontFamily">@font/gloria_hallelujah</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">46dp</item>
+        <item name="android:background">@drawable/edit_text_background</item>
+    </style>
+
+    <style name="Text_EditText_Combination">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">46dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
 </resources>
