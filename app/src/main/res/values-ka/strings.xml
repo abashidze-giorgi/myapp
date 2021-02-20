@@ -6,5 +6,7 @@
     <string name="register_text">რეგისტრაცია</string>
     <string name="password">პაროლი</string>
     <string name="log_in">შესვლა</string>
+    <string name="_5">+5</string>
+    <string name="__5">-5</string>
 
 </resources>

@@ -5,9 +5,7 @@
     <string name="register_text">REGISTER</string>
     <string name="password">PASSWORD</string>
     <string name="log_in">LOG IN</string>
-    <string name="_10">+10</string>
-    <string name="__10">-10</string>
-    <!--    <string name="app_name">MyApp</string>-->
-<!--    <string name="app_name">MyApp</string>-->
+    <string name="_5">+5</string>
+    <string name="__5">-5</string>
 
 </resources>

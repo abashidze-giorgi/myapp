@@ -40,25 +40,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/appCompatImageView" />
-<!--        android:fontFamily="@font/main_font"-->
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_decr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/__10"
+        android:onClick="button_decr_listener"
+        android:text="@string/__5"
         app:layout_constraintEnd_toStartOf="@+id/progress_bar"
         app:layout_constraintStart_toStartOf="@+id/progress_bar"
-        app:layout_constraintTop_toBottomOf="@+id/progress_bar"
-        android:onClick="button_decr_listener"/>
+        app:layout_constraintTop_toBottomOf="@+id/progress_bar" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_incr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/_10"
+        android:onClick="button_incr_listener"
+        android:text="@string/_5"
         app:layout_constraintEnd_toEndOf="@+id/progress_bar"
         app:layout_constraintStart_toEndOf="@+id/progress_bar"
-        app:layout_constraintTop_toBottomOf="@+id/progress_bar"
-        android:onClick="button_incr_listener"/>
+        app:layout_constraintTop_toBottomOf="@+id/progress_bar" />
 </androidx.constraintlayout.widget.ConstraintLayout>
