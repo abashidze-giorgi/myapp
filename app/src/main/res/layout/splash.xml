@@ -49,7 +49,8 @@
         android:text="@string/__10"
         app:layout_constraintEnd_toStartOf="@+id/progress_bar"
         app:layout_constraintStart_toStartOf="@+id/progress_bar"
-        app:layout_constraintTop_toBottomOf="@+id/progress_bar" />
+        app:layout_constraintTop_toBottomOf="@+id/progress_bar"
+        android:onClick="button_decr_listener"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_incr"
@@ -58,5 +59,6 @@
         android:text="@string/_10"
         app:layout_constraintEnd_toEndOf="@+id/progress_bar"
         app:layout_constraintStart_toEndOf="@+id/progress_bar"
-        app:layout_constraintTop_toBottomOf="@+id/progress_bar" />
+        app:layout_constraintTop_toBottomOf="@+id/progress_bar"
+        android:onClick="button_incr_listener"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
