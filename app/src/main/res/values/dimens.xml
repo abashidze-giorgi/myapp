@@ -3,7 +3,7 @@
     <dimen name="button_authorization_height">40dp</dimen>
     <dimen name="head_font_size">34sp</dimen>
     <dimen name="button_authorization_width">250dp</dimen>
-    <dimen name="button_authorization_font_size">18sp</dimen>
+    <dimen name="button_authorization_font_size">22sp</dimen>
     <dimen name="main_pic_height">200dp</dimen>
     <dimen name="button_margin_top">36dp</dimen>
     <dimen name="icon_button_size">32dp</dimen>

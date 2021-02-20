@@ -28,7 +28,8 @@
 
         <androidx.appcompat.widget.AppCompatEditText
             style="@style/Edit_Text"
-            android:id="@+id/loginTextEdit">
+            android:id="@+id/loginTextEdit"
+            android:text="@string/user_name">
         </androidx.appcompat.widget.AppCompatEditText>
 
 
@@ -42,7 +43,8 @@
 
        <androidx.appcompat.widget.AppCompatEditText
             style="@style/Edit_Text"
-           android:id="@+id/passwordTextEdit">
+           android:id="@+id/passwordTextEdit"
+           android:text="@string/password">
        </androidx.appcompat.widget.AppCompatEditText>
 
 
