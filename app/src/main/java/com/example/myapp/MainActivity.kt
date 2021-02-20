@@ -15,23 +15,23 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        setContentView(R.layout.login_activity)
     }
 
     fun button_decr_listener(view: View) {
-        val progressBar = findViewById<ProgressBar>(R.id.progress_bar)
-        var progress_bar_text_view = findViewById<TextView>(R.id.progress_bar_text_view)
-        if (progressBar.progress >= 5) {
-            progressBar.progress -= 5
-            progress_bar_text_view.text = progressBar.progress.toString()
-        }
+        listener(view, "decr")
     }
 
     fun button_incr_listener(view: View) {
+        listener(view, "incr")
+    }
+
+
+    fun listener(view: View, string: String) {
+        val numbersMap = mapOf("decr" to -1, "incr" to 1)
         val progressBar = findViewById<ProgressBar>(R.id.progress_bar)
-        var progress_bar_text_view = findViewById<TextView>(R.id.progress_bar_text_view)
-        if (progressBar.progress <= 95) {
-            progressBar.progress += 5
+        val progress_bar_text_view = findViewById<TextView>(R.id.progress_bar_text_view)
+        if (progressBar.progress <= 95 || progressBar.progress >= 5) {
+            progressBar.progress += 5* numbersMap[string]!!.toInt()
             progress_bar_text_view.text = progressBar.progress.toString()
         }
     }
