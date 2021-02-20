@@ -11,14 +11,18 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.splash)
-
     }
 
+
+    override fun onResume() {
+        super.onResume()
+        setContentView(R.layout.login_activity)
+    }
     fun button_decr_listener(view: View) {
         val progressBar = findViewById<ProgressBar>(R.id.progress_bar)
         var progress_bar_text_view = findViewById<TextView>(R.id.progress_bar_text_view)
-        if(progressBar.progress >= 10){
-            progressBar.progress -= 10
+        if(progressBar.progress >= 5){
+            progressBar.progress -= 5
             progress_bar_text_view.text = progressBar.progress.toString()
         }
     }
@@ -26,8 +30,8 @@ class MainActivity : AppCompatActivity() {
     fun button_incr_listener(view: View) {
         val progressBar = findViewById<ProgressBar>(R.id.progress_bar)
         var progress_bar_text_view = findViewById<TextView>(R.id.progress_bar_text_view)
-        if(progressBar.progress <= 90){
-            progressBar.progress += 10
+        if(progressBar.progress <= 95){
+            progressBar.progress += 5
             progress_bar_text_view.text = progressBar.progress.toString()
         }
     }
