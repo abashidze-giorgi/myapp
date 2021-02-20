@@ -20,6 +20,13 @@
         <item name="android:layout_height">@dimen/main_pic_height</item>
     </style>
 
+    <style name="Main_Image.1">
+        <item name="srcCompat">@drawable/got1</item>
+        <item name="android:layout_marginTop">-52dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/main_pic_height</item>
+    </style>
+
     <style name="Back_Button_Icon" parent="Widget.AppCompat.Button">
         <item name="android:src">@drawable/ic_round_arrow_back_ios_32px</item>
         <item name="android:paddingTop">1dp</item>

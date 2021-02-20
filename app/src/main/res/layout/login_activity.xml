@@ -9,7 +9,7 @@
 
     <androidx.appcompat.widget.AppCompatImageView style="@style/Back_Button_Icon" />
 
-    <androidx.appcompat.widget.AppCompatImageView style="@style/Main_Image" />
+    <androidx.appcompat.widget.AppCompatImageView style="@style/Main_Image.1" />
 
     <androidx.appcompat.widget.AppCompatTextView
         style="@style/Text_Title"
@@ -38,6 +38,7 @@
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/passwordTextEdit"
             style="@style/Edit_Text"
+            android:inputType="textPassword"
             android:text="@string/password" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>

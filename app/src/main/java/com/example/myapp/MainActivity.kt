@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
+        setContentView(R.layout.login_activity)
     }
 
     fun button_decr_listener(view: View) {
