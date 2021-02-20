@@ -3,6 +3,6 @@
 
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:drawable="@drawable/edittext_solid_background_grey"/>
+    <item android:drawable="@drawable/edittext_solid_background_grey" />
 
 </selector>

@@ -5,6 +5,6 @@
     <string name="user_name">მომხმარებელი</string>
     <string name="register_text">რეგისტრაცია</string>
     <string name="password">პაროლი</string>
-
+    <string name="log_in">შესვლა</string>
 
 </resources>

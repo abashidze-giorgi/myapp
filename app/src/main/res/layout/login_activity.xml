@@ -1,61 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:background="@color/background_black"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_black"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        style="@style/Back_Button_Icon"
-    />
+    <androidx.appcompat.widget.AppCompatImageView style="@style/Back_Button_Icon" />
 
-    <androidx.appcompat.widget.AppCompatImageView
-        style="@style/Main_Image" />
+    <androidx.appcompat.widget.AppCompatImageView style="@style/Main_Image" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:text="@string/login_layout_main_text"
-        style="@style/Text_Title" />
+        style="@style/Text_Title"
+        android:text="@string/login_layout_main_text" />
 
     <androidx.appcompat.widget.LinearLayoutCompat style="@style/Text_EditText_Combination">
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:text="@string/user_name"
             style="@style/Text_Title.Button_Label_Text"
             android:layout_width="wrap_content"
-            />
+            android:text="@string/user_name" />
 
         <androidx.appcompat.widget.AppCompatEditText
-            style="@style/Edit_Text"
             android:id="@+id/loginTextEdit"
-            android:text="@string/user_name">
-        </androidx.appcompat.widget.AppCompatEditText>
-
+            style="@style/Edit_Text"
+            android:text="@string/user_name" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
-   <androidx.appcompat.widget.LinearLayoutCompat style="@style/Text_EditText_Combination">
+    <androidx.appcompat.widget.LinearLayoutCompat style="@style/Text_EditText_Combination">
 
-       <androidx.appcompat.widget.AppCompatTextView
-           android:text="@string/password"
-            style="@style/Text_Title.Button_Label_Text"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Text_Title.Button_Label_Text"
+            android:text="@string/password" />
 
-       <androidx.appcompat.widget.AppCompatEditText
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/passwordTextEdit"
             style="@style/Edit_Text"
-           android:id="@+id/passwordTextEdit"
-           android:text="@string/password">
-       </androidx.appcompat.widget.AppCompatEditText>
+            android:text="@string/password" />
 
-
-   </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:text="@string/log_in"
-        style="@style/Main_Button" />
+        style="@style/Main_Button"
+        android:text="@string/log_in" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:text="@string/register_text"
-        style="@style/Main_Button" />
+        style="@style/Main_Button"
+        android:text="@string/register_text" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

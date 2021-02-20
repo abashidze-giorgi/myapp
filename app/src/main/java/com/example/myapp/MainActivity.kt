@@ -4,13 +4,11 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
+    private var progr = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.asasd)
+        setContentView(R.layout.splash)
     }
 
-    override fun onResume() {
-        super.onResume()
-        setContentView(R.layout.login_activity)
-    }
+
 }
