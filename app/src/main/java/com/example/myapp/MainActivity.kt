@@ -2,7 +2,6 @@ package com.example.myapp
 
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -18,15 +17,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun button_decr_listener(view: View) {
-        listener(view, "decr")
+        progress_bar_listener(view, "decr")
     }
 
     fun button_incr_listener(view: View) {
-        listener(view, "incr")
+        progress_bar_listener(view, "incr")
     }
 
 
-    fun listener(view: View, string: String) {
+    fun progress_bar_listener(view: View, string: String) {
         val numbersMap = mapOf("decr" to -1, "incr" to 1)
         val progressBar = findViewById<ProgressBar>(R.id.progress_bar)
         val progress_bar_text_view = findViewById<TextView>(R.id.progress_bar_text_view)
