@@ -9,7 +9,6 @@
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/appCompatImageView3"
         style="@style/Back_Button_Icon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,7 +23,7 @@
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/appCompatTextView"
         style="@style/Text_Title"
-        android:text="@string/login_layout_main_text"
+        android:text="@string/register_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appCompatImageView2" />
@@ -34,7 +33,7 @@
         style="@style/Text_EditText_Combination"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat">
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView">
 
         <androidx.appcompat.widget.AppCompatTextView
             style="@style/Text_Title.Button_Label_Text"
@@ -52,8 +51,9 @@
         android:id="@+id/linearLayoutCompat"
         style="@style/Text_EditText_Combination"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat2">
 
         <androidx.appcompat.widget.AppCompatTextView
             style="@style/Text_Title.Button_Label_Text"
@@ -68,20 +68,11 @@
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/logActLoginButtonID"
-        style="@style/Main_Button"
-        android:text="@string/log_in"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat2" />
-
-    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/logActRegisterButtonID"
-        android:onClick="logActRegisterButtonID_Click"
         style="@style/Main_Button"
         android:text="@string/register_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logActLoginButtonID" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
