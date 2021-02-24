@@ -48,12 +48,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun openRegistrationActivity(view: View, userName: String) {
-        val intent = Intent(this, registration_activity::class.java).apply {
-            putExtra(EXTRA_MESSAGE, message)
+//        val intent = Intent(this, registration_activity::class.java).apply {
+//            putExtra(EXTRA_MESSAGE, message)
         }
-        startActivity(intent)
-    }
-    }
+//        startActivity(intent)
+//    }
+//    }
 }
 
 
