@@ -72,4 +72,9 @@
         <item name="background">@drawable/button_gradient_blue_pressed</item>
     </style>
 
+    <style name="QuadButton40">
+        <item name="android:background">@drawable/button_gradient_solid_blue</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
 </resources>
