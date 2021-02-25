@@ -9,21 +9,23 @@
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/appCompatImageView3"
-        style="@style/Back_Button_Icon"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/appCompatImageView2"
         style="@style/Main_Image.1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/appCompatImageView3"
+        style="@style/Back_Button_Icon"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/appCompatTextView"
         style="@style/Text_Title"
+        android:layout_marginTop="16dp"
         android:text="@string/login_layout_main_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,9 +34,11 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/linearLayoutCompat2"
         style="@style/Text_EditText_Combination"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat">
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView">
 
         <androidx.appcompat.widget.AppCompatTextView
             style="@style/Text_Title.Button_Label_Text"
@@ -52,8 +56,9 @@
         android:id="@+id/linearLayoutCompat"
         style="@style/Text_EditText_Combination"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat2">
 
         <androidx.appcompat.widget.AppCompatTextView
             style="@style/Text_Title.Button_Label_Text"
@@ -72,16 +77,33 @@
         style="@style/Main_Button"
         android:text="@string/log_in"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat2" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/logActRegisterButtonID"
-        android:onClick="logActRegisterButtonID_Click"
         style="@style/Main_Button"
         android:text="@string/register_text"
+        android:onClick="sendMessage"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logActLoginButtonID" />
+<!--        android:onClick="logActRegisterButtonID_Click"-->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="10dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="401dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

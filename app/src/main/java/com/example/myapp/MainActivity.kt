@@ -8,7 +8,10 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
+const val EXTRA_MESSAGE = "com.example.MyfirstApp.Message"
+
 class MainActivity : AppCompatActivity() {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,17 +46,26 @@ class MainActivity : AppCompatActivity() {
 
     fun logActRegisterButtonID_Click(view: View) {
         val userName = findViewById<TextView>(R.id.logActUserNameTextEdit).text.toString()
+        println(userName)
         openRegistrationActivity(view, userName)
         
     }
 
     private fun openRegistrationActivity(view: View, userName: String) {
-//        val intent = Intent(this, registration_activity::class.java).apply {
-//            putExtra(EXTRA_MESSAGE, message)
+        val intent = Intent(this, registration_activity::class.java)
         }
-//        startActivity(intent)
-//    }
-//    }
+    // .apply {
+    //            putExtra(EXTRA_MESSAGE, message)
+
+    /** Called when the user taps the Send button */
+    fun sendMessage(view: View) {
+        val userName = findViewById<TextView>(R.id.logActUserNameTextEdit).text.toString()
+        // Do something in response to button
+        val intent = Intent(this, registration_activity::class.java).apply {
+            putExtra(EXTRA_MESSAGE, userName)
+        }
+        startActivity(intent)
+    }
 }
 
 

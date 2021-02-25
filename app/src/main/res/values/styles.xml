@@ -27,11 +27,12 @@
         <item name="android:layout_height">@dimen/main_pic_height</item>
     </style>
 
-    <style name="Back_Button_Icon" parent="Widget.AppCompat.Button">
-        <item name="android:src">@drawable/ic_round_arrow_back_ios_32px</item>
-        <item name="android:paddingTop">1dp</item>
-        <item name="android:paddingBottom">1dp</item>
+    <style name="Back_Button_Icon" parent="Widget.AppCompat.ImageButton">
+        <item name="srcCompat">@drawable/ic_round_arrow_back_ios_32px</item>
+<!--        <item name="android:gravity">bottom</item>-->
         <item name="android:background">@color/background_black</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingStart">2dp</item>
         <item name="android:layout_width">@dimen/icon_button_size</item>
         <item name="android:layout_height">@dimen/icon_button_size</item>
     </style>
