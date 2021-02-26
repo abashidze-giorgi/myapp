@@ -2,5 +2,6 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/main_font</item>
+        <item>@font/poppins_bold</item>
     </array>
 </resources>

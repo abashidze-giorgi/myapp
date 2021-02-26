@@ -5,9 +5,12 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="edit_text_grey">#80C7C7C7</color>
+    <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="background_black">#FF000000</color>
-    <color name="button_blue">#00C2FF</color>
-    <color name="button_pressed_blue">#086F8F</color>
+    <color name="background_grey">#707070</color>
+    <color name="background_lite_grey">#9F9F9F</color>
+    <color name="button_yellow">#FFD500</color>
+    <color name="button_dark_yellow">#FABB00</color>
+    <color name="button_blue">#395AFF</color>
+    <color name="transparent_10">#1AE9E9E9</color>
 </resources>

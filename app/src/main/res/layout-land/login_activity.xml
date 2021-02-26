@@ -1,40 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:background="@color/background_black"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_grey_gradient"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
-        style="@style/Back_Button_Icon"
-        />
-
-    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView3"
         style="@style/Main_Image"
-        android:layout_height="150dp"/>
+        android:layout_width="683dp"
+        android:layout_height="113dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
 
 
     <androidx.appcompat.widget.AppCompatTextView
-        app:fontFamily="@font/main_font"
+        android:id="@+id/appCompatTextView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="4dp"
         android:text="@string/login_layout_main_text"
-        android:textColor="@color/button_blue"
+        android:textColor="@color/black"
         android:textSize="34sp"
-        />
+        app:fontFamily="@font/main_font"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView3" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat2"
+        style="@style/Text_EditText_Combination"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView2">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Text_Title.Button_Label_Text"
+            android:layout_width="wrap_content"
+            android:text="@string/user_name" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/regActUserNameTextEdit"
+            style="@style/Edit_Text"
+            android:text="@string/user_name" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/landscapeLinearLayoutCompat2"
+        style="@style/Text_EditText_Combination"
+        android:layout_marginTop="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView2">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Text_Title.Button_Label_Text"
+            android:layout_width="wrap_content"
+            android:text="@string/password" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/landscapeRegActUserNameTextEdit"
+            style="@style/Edit_Text"
+            android:text="@string/password"
+            android:inputType="textPassword"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:text="@string/user_name"
+        android:id="@+id/appCompatButton"
         style="@style/Main_Button"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="8dp"
+        android:text="@string/user_name"
+        app:layout_constraintTop_toBottomOf="@+id/landscapeLinearLayoutCompat2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="216dp" />
 
     <androidx.appcompat.widget.AppCompatButton
+        style="@style/Main_Button"
+        android:layout_marginTop="12dp"
         android:text="@string/register_text"
-        style="@style/Main_Button"/>
+        app:layout_constraintTop_toBottomOf="@+id/appCompatButton"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="216dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="667dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
 
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

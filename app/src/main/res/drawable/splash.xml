@@ -2,9 +2,9 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="@color/background_black"/>
+            <solid android:color="@color/background_lite_grey"/>
         </shape>
     </item>
-    <item android:drawable="@drawable/got"/>
+    <item android:drawable="@drawable/splash_logo"/>
 </layer-list>
 

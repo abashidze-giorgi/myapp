@@ -10,18 +10,12 @@
         <item name="android:paddingStart">32dp</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:layout_marginTop">@dimen/button_margin_top</item>
-        <item name="android:background">@drawable/button_background</item>
+        <item name="android:background">@drawable/small_radius_button_yellow_background</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 
     <style name="Main_Image">
-        <item name="srcCompat">@drawable/got</item>
-        <item name="android:layout_marginTop">-52dp</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">@dimen/main_pic_height</item>
-    </style>
-
-    <style name="Main_Image.1">
-        <item name="srcCompat">@drawable/got1</item>
+        <item name="srcCompat">@drawable/splash_logo</item>
         <item name="android:layout_marginTop">-52dp</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">@dimen/main_pic_height</item>
@@ -30,7 +24,7 @@
     <style name="Back_Button_Icon" parent="Widget.AppCompat.ImageButton">
         <item name="srcCompat">@drawable/ic_round_arrow_back_ios_32px</item>
 <!--        <item name="android:gravity">bottom</item>-->
-        <item name="android:background">@color/background_black</item>
+        <item name="android:background">@color/black</item>
         <item name="android:paddingTop">8dp</item>
         <item name="android:paddingStart">2dp</item>
         <item name="android:layout_width">@dimen/icon_button_size</item>
@@ -52,7 +46,7 @@
     </style>
 
     <style name="Edit_Text" parent="Widget.AppCompat.EditText">
-        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:background">@color/background_lite_grey</item>
         <item name="android:textColor">@color/button_blue</item>
         <item name="fontFamily">@font/main_font</item>
         <item name="android:textSize">@dimen/button_authorization_font_size</item>
@@ -69,11 +63,11 @@
     </style>
 
     <style name="CombineStyle">
-        <item name="background">@drawable/button_gradient_blue_pressed</item>
+        <item name="background">@drawable/small_radius_button_yellow_background</item>
     </style>
 
     <style name="QuadButton40">
-        <item name="android:background">@drawable/button_gradient_solid_blue</item>
+        <item name="android:background">@drawable/small_radius_button_yellow_background</item>
         <item name="android:layout_margin">10dp</item>
     </style>
 
